@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import "bootstrap/dist/css/bootstrap.css";
+import "./globals.css";
 import Header from "./components/sharedcomponents/Header";
 import Footer from "./components/sharedcomponents/Footer";
 
@@ -16,7 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body suppressHydrationWarning={true}>
         <Header />
         {children}
         <Footer />
