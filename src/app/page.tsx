@@ -1,5 +1,6 @@
 import About from "./components/homepageComponents/About";
 import Banner from "./components/homepageComponents/Banner";
+import Counting from "./components/homepageComponents/Counting";
 import Service from "./components/homepageComponents/Service";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Banner />
       <Service />
       <About />
+      <Counting />
     </div>
   );
 }
