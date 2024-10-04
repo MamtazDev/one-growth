@@ -1,5 +1,6 @@
 import { services } from "@/app/utils";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Service = () => {
@@ -35,7 +36,7 @@ const Service = () => {
         <div className="row">
           {services.map((data, index) => (
             <div key={index} className="col-md-6 col-lg-4">
-              <a href="./service-details.html">
+              <Link href="/">
                 <div
                   className="new_card"
                   //   data-aos="fade-right"
@@ -53,7 +54,7 @@ const Service = () => {
                   <p className="card-text">{data.description}</p>
                   <i className="fa-solid fa-arrow-right-long"></i>
                 </div>
-              </a>
+              </Link>
             </div>
           ))}
         </div>
