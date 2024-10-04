@@ -1,4 +1,4 @@
-import { INavItems } from "./type";
+import { IFooterData, INavItems } from "./type";
 
 export const navItems: INavItems[] = [
   {
@@ -23,7 +23,7 @@ export const navItems: INavItems[] = [
   },
 ];
 
-export const footerData = [
+export const footerData: IFooterData[] = [
   {
     title: "Home",
     path: "/",
